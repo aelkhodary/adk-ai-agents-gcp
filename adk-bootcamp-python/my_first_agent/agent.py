@@ -8,9 +8,11 @@
 # )
 
 
+
 from google.adk.agents import LlmAgent
 
-
+# The ADK runtime looks for an object named `root_agent`
+# in main.py to start the application.
 root_agent = LlmAgent(
     name="assistant_agent",
     model="gemini-2.5-flash",

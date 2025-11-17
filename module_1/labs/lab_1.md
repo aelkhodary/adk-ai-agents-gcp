@@ -143,11 +143,15 @@ The moment of truth! The process to run a code-based agent is identical to a con
 
     ```console
     cd my_first_agent
+    my_first_agent % adK run . 
     ```
 
 2.  Run the ADK's built-in web interface.
+You must run adk web from parent_folder, not inside my_first_agent.
 
     ```console
+    cd /path/to/parent_folder     # one level ABOVE my_first_agent
+    source .venv/bin/activate     # if not already active
     adk web
     ```
 
